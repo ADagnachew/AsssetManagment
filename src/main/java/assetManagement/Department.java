@@ -7,7 +7,8 @@ public class Department {
     private String depId;
     private String name;
 
-    private List<Person> people;
+    private List<Person> personList;
+    private University university;
 
     public Department(String depId, String name) {
         this.depId = depId;
@@ -30,11 +31,19 @@ public class Department {
         this.name = name;
     }
 
-    public List<Person> getPeople() {
-        return people;
+    public List<Person> getPersonList() {
+        return personList;
     }
 
-    public void setPeople(List<Person> people) {
-        this.people = people;
+    public void setPersonList(List<Person> personList) {
+        this.personList = personList;
+    }
+
+    public University getUniversity() {
+        return university;
+    }
+
+    public void setUniversity(University university) {
+        this.university = university;
     }
 }

@@ -1,5 +1,7 @@
 package assetManagement;
 
+import java.util.List;
+
 public class Person {
 
     private String id;
@@ -7,6 +9,7 @@ public class Person {
     private String LastName;
 
     private Department department;
+    private List<Role> Roles;
 
     public Person() {
     }
@@ -47,5 +50,13 @@ public class Person {
 
     public void setDepartment(Department department) {
         this.department = department;
+    }
+
+    public List<Role> getRoles() {
+        return Roles;
+    }
+
+    public void setRoles(List<Role> roles) {
+        Roles = roles;
     }
 }
