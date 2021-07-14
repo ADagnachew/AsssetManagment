@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.time.Month;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class FunctionUtilTest {
 
@@ -28,6 +29,15 @@ public class FunctionUtilTest {
 
     //Person alehegn,khalid,muluadam,daniel,john,jim,rechardson,alicia,meron,
 
+
+    static LocalDateTime[] getOrderdAndDeliveredDates(){
+        LocalDateTime[] dates= new LocalDateTime[2];
+        Random rand= new Random();
+        int month=rand.nextInt(10)+1;
+        dates[0]= LocalDateTime.of(2020,month,23,2,00);
+        dates[0]= LocalDateTime.of(2020,month+1,23,2,00);
+        return dates;
+    }
     @Before
     public void setUp(){
 
@@ -98,6 +108,36 @@ public class FunctionUtilTest {
 
         LocalDateTime orderDate6 = LocalDateTime.of(2021,Month.JULY,20,8,20);
         LocalDateTime returnDate6 = LocalDateTime.of(2021,Month.JULY,20,6,20);
+
+        LocalDateTime orderDate7 = LocalDateTime.of(2021,Month.JULY,20,8,20);
+        LocalDateTime returnDate7 = LocalDateTime.of(2021,Month.JULY,20,6,20);
+
+        LocalDateTime orderDate8 = LocalDateTime.of(2021,Month.JULY,20,8,20);
+        LocalDateTime returnDate8 = LocalDateTime.of(2021,Month.JULY,20,6,20);
+
+        LocalDateTime orderDate9 = LocalDateTime.of(2021,Month.JULY,20,8,20);
+        LocalDateTime returnDate9 = LocalDateTime.of(2021,Month.JULY,20,6,20);
+
+
+        LocalDateTime orderDate10 = LocalDateTime.of(2021,Month.JULY,20,8,20);
+        LocalDateTime returnDate10 = LocalDateTime.of(2021,Month.JULY,20,6,20);
+
+
+        LocalDateTime orderDate11 = LocalDateTime.of(2021,Month.JULY,20,8,20);
+        LocalDateTime returnDate11 = LocalDateTime.of(2021,Month.JULY,20,6,20);
+
+        LocalDateTime orderDate12 = LocalDateTime.of(2021,Month.JULY,20,8,20);
+        LocalDateTime returnDate12 = LocalDateTime.of(2021,Month.JULY,20,6,20);
+
+
+        LocalDateTime orderDate13 = LocalDateTime.of(2021,Month.JULY,20,8,20);
+        LocalDateTime returnDate13 = LocalDateTime.of(2021,Month.JULY,20,6,20);
+
+        LocalDateTime orderDate14= LocalDateTime.of(2021,Month.JULY,20,8,20);
+        LocalDateTime returnDate14 = LocalDateTime.of(2021,Month.JULY,20,6,20);
+
+
+
 
         order1 = new Order("order101" ,orderDate1,returnDate1,Arrays.asList(orderLine1),OrderStatus.APPROVED);
         order2 = new Order("Order102",orderDate2,returnDate2,Arrays.asList(orderLine2),OrderStatus.DELIVERED);
