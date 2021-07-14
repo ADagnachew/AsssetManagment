@@ -72,7 +72,7 @@ public class FunctionUtilTest {
 
         order1 = new Order("order101" ,orderDate1,returnDate1,Arrays.asList(orderLine1));
         order2 = new Order("Order102",orderDate2,returnDate2,Arrays.asList(orderLine2));
-        order3 = new Order("Order103",orderDate3,returnDate3,Arrays.asList(orderLine3);
+        order3 = new Order("Order103",orderDate3,returnDate3,Arrays.asList(orderLine3));
         order4 = new Order("Order104",orderDate4,returnDate4,Arrays.asList(orderLine1));
         order5 = new Order("Order105",orderDate5,returnDate5,Arrays.asList(orderLine2));
         order6 = new Order("Order106",orderDate6,returnDate6,Arrays.asList(orderLine4));
