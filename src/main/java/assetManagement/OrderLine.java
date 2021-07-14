@@ -5,6 +5,12 @@ public class OrderLine {
     private Product product;
     private float quantity;
 
+    public OrderLine(Product product, float quantity) {
+
+        this.product = product;
+        this.quantity = quantity;
+    }
+
     public Product getProduct() {
         return product;
     }

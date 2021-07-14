@@ -5,13 +5,13 @@ import java.util.List;
 public class University {
 
     private String id;
-    private String UniName;
+    private String uniName;
     private List<Department> departments;
     private List<Stock> stocks;
 
     public University(String id, String uniName) {
         this.id = id;
-        UniName = uniName;
+        this.uniName = uniName;
     }
 
     public String getId() {
@@ -23,11 +23,11 @@ public class University {
     }
 
     public String getUniName() {
-        return UniName;
+        return uniName;
     }
 
     public void setUniName(String uniName) {
-        UniName = uniName;
+        uniName = uniName;
     }
 
     public List<Department> getDepartments() {

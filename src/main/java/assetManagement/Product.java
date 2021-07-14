@@ -5,14 +5,16 @@ public class Product {
     private String id;
     private String productName;
     private double price;
+    private float quantity;
 
     Category category;
     private Stock stock;
 
-    public Product(String id, String productName, double price) {
+    public Product(String id, String productName, double price,float quantity) {
         this.id = id;
         this.productName = productName;
         this.price = price;
+        this.quantity = quantity;
     }
 
     public String getId() {
