@@ -9,7 +9,7 @@ public class Person {
     private String LastName;
 
     private Department department;
-    private List<Role> Roles;
+    private List<Role> roles;
 
     public Person() {
     }
@@ -53,10 +53,10 @@ public class Person {
     }
 
     public List<Role> getRoles() {
-        return Roles;
+        return roles;
     }
 
     public void setRoles(List<Role> roles) {
-        Roles = roles;
+        this.roles = roles;
     }
 }
