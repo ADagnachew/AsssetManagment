@@ -31,14 +31,6 @@ public class Order {
         this.orderId = orderId;
     }
 
-    public float getAmount() {
-        return amount;
-    }
-
-    public void setAmount(float amount) {
-        this.amount = amount;
-    }
-
     public LocalDateTime getOrderDate() {
         return orderDate;
     }

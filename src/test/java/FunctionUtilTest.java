@@ -3,6 +3,7 @@ import org.junit.Before;
 
 import java.time.LocalDateTime;
 import java.time.Month;
+import java.util.Arrays;
 import java.util.List;
 
 public class FunctionUtilTest {
@@ -11,7 +12,8 @@ public class FunctionUtilTest {
     List<Product> products;
     List<Person> users;
     List<Person> managers;
-    List<StockKeeper> stockKeepers;
+    List<Person> stockKeepers;
+    List<Person> people;
     List<Order> orders;
 
 
@@ -41,6 +43,8 @@ public class FunctionUtilTest {
         cooler = new Product("p112", "miniCooler",200,10);
         refrigrator = new Product("p113", "miniFrig",300,15);
 
+        products = Arrays.asList(laptop,car,chair,fork,TV,dish,whiteBoard,bottle,cooler,book,printer,refrigrator,bike);
+
 
         orderLine1 = new OrderLine(laptop,2);
         orderLine2 = new OrderLine(chair,1);
@@ -66,16 +70,16 @@ public class FunctionUtilTest {
         LocalDateTime orderDate6 = LocalDateTime.of(2021,Month.JULY,20,8,20);
         LocalDateTime returnDate6 = LocalDateTime.of(2021,Month.JULY,20,6,20);
 
-        order1 = new Order("order101", 1,orderDate1,returnDate1);
-        order2 = new Order("Order102",2,orderDate2,returnDate2);
-        order3 = new Order("Order103",3,orderDate3,returnDate3);
-        order4 = new Order("Order104",1,orderDate4,returnDate4);
-        order5 = new Order("Order105",1,orderDate5,returnDate5);
-        order6 = new Order("Order106",1,orderDate6,returnDate6);
-        order7 = new Order("Order107",1,orderDate1,returnDate2);
-        order8 = new Order("Order108",1,orderDate4,returnDate4);
-        order9 = new Order("Order109",2,orderDate2,returnDate2);
-        order10 = new Order("Order104",1,orderDate6,returnDate6);
+        order1 = new Order("order101" ,orderDate1,returnDate1,Arrays.asList(orderLine1));
+        order2 = new Order("Order102",orderDate2,returnDate2,Arrays.asList(orderLine2));
+        order3 = new Order("Order103",orderDate3,returnDate3,Arrays.asList(orderLine3);
+        order4 = new Order("Order104",orderDate4,returnDate4,Arrays.asList(orderLine1));
+        order5 = new Order("Order105",orderDate5,returnDate5,Arrays.asList(orderLine2));
+        order6 = new Order("Order106",orderDate6,returnDate6,Arrays.asList(orderLine4));
+        order7 = new Order("Order107",orderDate1,returnDate2,Arrays.asList(orderLine5));
+        order8 = new Order("Order108",orderDate4,returnDate4,Arrays.asList(orderLine1));
+        order9 = new Order("Order109",orderDate2,returnDate2,Arrays.asList(orderLine3));
+        order10 = new Order("Order110",orderDate6,returnDate6,Arrays.asList(orderLine1,orderLine2));
     }
 
 }
