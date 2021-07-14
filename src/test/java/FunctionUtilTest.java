@@ -18,7 +18,9 @@ public class FunctionUtilTest {
 
 
     Product laptop, printer,chair,bike,car,TV,dish,fork,mobilePhone,book,bottle,cooler,whiteBoard,refrigrator,spoon;
-    Order order1, order2, order3, order4,order5,order6, order7,order8,order9,order10;
+    Order order1, order2, order3, order4,order5,order6, order7,order8,order9,order10,
+            order20, order21,order22, order23, order24,order25,order26, order27,order28,order29,order30,
+            order11, order12, order13, order14,order15,order16, order17,order18,order19;
     OrderLine orderLine1,orderLine2,orderLine3,orderLine4,orderLine5;
     OrderLine orderLine6,orderLine7,orderLine8,orderLine9,orderLine10;
     OrderLine orderLine11,orderLine12,orderLine13,orderLine14,orderLine15;
@@ -109,6 +111,99 @@ public class FunctionUtilTest {
         order8 = new Order("Order108",orderDate4,returnDate4,Arrays.asList(orderLine1),OrderStatus.DELIVERED);
         order9 = new Order("Order109",orderDate2,returnDate2,Arrays.asList(orderLine3),OrderStatus.DELIVERED);
         order10 = new Order("Order110",orderDate6,returnDate6,Arrays.asList(orderLine1,orderLine2),OrderStatus.CANCELED);
+
+        List<Order> orders1 = Arrays.asList(order1,order2,order3,order3,order5,order6,order7,order8,order9,order10);
+
+        Department d1 = new Department("12132","Computer Science");
+
+
+         List<Person> people1 = Arrays.asList(
+                new Person("12123","khalid","med",d1,Arrays.asList( new User(Arrays.asList(order1,order2)))),
+                new Person("97897","Alehegne","Engehela",d1,Arrays.asList(new Manager(orders1), new User(Arrays.asList(order3,order8)))),
+                new Person("97897","Ali","Klayn",d1,Arrays.asList( new User(Arrays.asList(order5,order4)))),
+                new Person("23423","Muluadam","Madaulum",d1,Arrays.asList( new User(Arrays.asList(order6)))),
+                new Person("23428","John","Sim",d1,Arrays.asList( new User(Arrays.asList(order7,order10,order9)))),
+
+                new Person("87844","Jean","Friend",d1,Arrays.asList( new StockKeeper(Arrays.asList(order4,order9,order6)))),
+                new Person("236745","Van","Dam",d1,Arrays.asList( new StockKeeper(Arrays.asList(order3,order2))))
+
+        );
+
+
+
+
+
+
+        order20 = new Order("order101" ,orderDate1,returnDate1,Arrays.asList(orderLine1,orderLine2),OrderStatus.APPROVED);
+        order21 = new Order("Order102",orderDate2,returnDate2,Arrays.asList(orderLine2),OrderStatus.APPROVED);
+        order23 = new Order("Order103",orderDate3,returnDate3,Arrays.asList(orderLine3),OrderStatus.APPROVED);
+        order24 = new Order("Order104",orderDate4,returnDate4,Arrays.asList(orderLine1,orderLine3,orderLine2),OrderStatus.DELIVERED);
+        order25 = new Order("Order105",orderDate5,returnDate5,Arrays.asList(orderLine2),OrderStatus.REJECTED);
+        order26 = new Order("Order106",orderDate6,returnDate6,Arrays.asList(orderLine4),OrderStatus.DELIVERED);
+        order27 = new Order("Order107",orderDate1,returnDate2,Arrays.asList(orderLine5,orderLine4),OrderStatus.REJECTED);
+        order28 = new Order("Order108",orderDate4,returnDate4,Arrays.asList(orderLine1),OrderStatus.DELIVERED);
+        order29 = new Order("Order109",orderDate2,returnDate2,Arrays.asList(orderLine3),OrderStatus.DELIVERED);
+        order30 = new Order("Order110",orderDate6,returnDate6,Arrays.asList(orderLine1,orderLine2,orderLine3),OrderStatus.CANCELED);
+
+
+        Department d2 = new Department("17568","Mathematics");
+List<Order> listOrder1 = Arrays.asList(order20,order21,order24,order23);
+        List<Order> listOrder2 = Arrays.asList(order25,order26,order27,order28,order29,order30);
+        private List<Person> people2 = Arrays.asList(
+                new Person("389742","Jet","Lee",d2,Arrays.asList( new User(Arrays.asList(order20,order21)))),
+                new Person("23423","Khan","Sharo",d2,Arrays.asList(new Manager(listOrder1), new User(Arrays.asList(order21,order22)))),
+                new Person("23428","Jamal","Kak",d2,Arrays.asList( new User(Arrays.asList(order24,order23)))),
+                new Person("87844","Salah","Ali",d2,Arrays.asList( new User(Arrays.asList(order25,order25,order26)))),
+                new Person("23428","Josie","Miso",d2,Arrays.asList( new User(Arrays.asList(order27,order28, order29,order30)))),
+                new Person("236745","Anthony","Sander",d2,Arrays.asList( new Manager(listOrder2))),
+                new Person("389742","Jims","Bond",d2,Arrays.asList( new StockKeeper(Arrays.asList(order24,order26,order28,order29))))
+
+        );
+
+
+
+
+
+
+
+        Department d3 = new Department("15632","Physics");
+        order11 = new Order("order111" ,orderDate1,returnDate1,Arrays.asList(orderLine22),OrderStatus.APPROVED);
+        order12 = new Order("Order112",orderDate2,returnDate2,Arrays.asList(orderLine12),OrderStatus.DELIVERED);
+        order13 = new Order("Order113",orderDate3,returnDate3,Arrays.asList(orderLine23),OrderStatus.DELIVERED);
+        order14 = new Order("Order114",orderDate4,returnDate4,Arrays.asList(orderLine11),OrderStatus.DELIVERED);
+        order15 = new Order("Order115",orderDate5,returnDate5,Arrays.asList(orderLine9),OrderStatus.REJECTED);
+        order16 = new Order("Order116",orderDate6,returnDate6,Arrays.asList(orderLine6),OrderStatus.DELIVERED);
+        order17 = new Order("Order117",orderDate1,returnDate2,Arrays.asList(orderLine14),OrderStatus.REJECTED);
+        order18 = new Order("Order118",orderDate4,returnDate4,Arrays.asList(orderLine17),OrderStatus.DELIVERED);
+        order19 = new Order("Order119",orderDate2,returnDate2,Arrays.asList(orderLine27),OrderStatus.DELIVERED);
+        order20 = new Order("Order120",orderDate6,returnDate6,Arrays.asList(orderLine29,orderLine7),OrderStatus.CANCELED)
+        List<Order> listOrder3 = Arrays.asList(order11,order12,order13,order14,order15,order16,order17,order18,order19,order20);
+
+         List<Person> people3 = Arrays.asList(
+                new Person("90635","Hosie","Foo",d3,Arrays.asList( new User(Arrays.asList(order11,order12)))),
+                new Person("44444","Shoma","Khar",d3,Arrays.asList(new Manager(listOrder3), new User(Arrays.asList(order13,order14)))),
+                new Person("89783","Messi","Argentina",d3,Arrays.asList( new User(Arrays.asList(order15,order16)))),
+                new Person("97897","Ronaldo","Cristiano",d3,Arrays.asList( new User(Arrays.asList(order16,order17)))),
+                new Person("23423","Ronaldo","Rozario",d3,Arrays.asList( new User(Arrays.asList(order18,order19,order20)))),
+                new Person("23428","Josie","Miso",d3,Arrays.asList(
+                        new StockKeeper(Arrays.asList(order12,order13,order14)))),
+                new Person("23428","Zidan","Zine",d3,Arrays.asList(
+                        new StockKeeper(Arrays.asList(order16,order18,order19)))),
+
+                new Person("389742","Sosan","Rais",d3,Arrays.asList( new User(Arrays.asList(order20,order12))))
+
+        );
+
+        university = new University("MIU1","MIU");
+
+        university.setDepartments(Arrays.asList(d1,d2,d3));
+
+
+
     }
+
+
+
+
 
 }

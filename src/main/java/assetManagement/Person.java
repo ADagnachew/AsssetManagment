@@ -9,16 +9,20 @@ public class Person {
     private String LastName;
 
     private Department department;
-    private List<Role> Roles;
+    private List<Role> roles;
 
     public Person() {
     }
 
-    public Person(String id, String firstName, String lastName) {
+    public Person(String id, String firstName, String lastName,Department dep, List<Role> asList) {
         this.id = id;
         this.firstName = firstName;
         LastName = lastName;
+        roles=asList;
+        department=dep;
     }
+
+
 
     public String getId() {
         return id;
@@ -53,10 +57,10 @@ public class Person {
     }
 
     public List<Role> getRoles() {
-        return Roles;
+        return this.roles;
     }
 
     public void setRoles(List<Role> roles) {
-        Roles = roles;
+        this.roles = roles;
     }
 }
