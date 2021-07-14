@@ -15,12 +15,12 @@ public class Order {
     private OrderStatus orderStatus;
     private Product product;
 
-    public Order(String orderId, LocalDateTime orderDate, LocalDateTime returnDate, List<OrderLine> ordersLines) {
+    public Order(String orderId, LocalDateTime orderDate, LocalDateTime returnDate, List<OrderLine> ordersLines, OrderStatus orderStatus) {
         this.orderId = orderId;
         this.orderDate = orderDate;
         this.returnDate = returnDate;
         this.orderLines=ordersLines;
-
+        this.orderStatus =  orderStatus;
     }
 
     public String getOrderId() {
