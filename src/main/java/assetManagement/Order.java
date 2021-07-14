@@ -13,6 +13,7 @@ public class Order {
     private StockKeeper stockKeeper;
     private User user;
     private OrderStatus orderStatus;
+    private Product product;
 
     public Order(String orderId, float amount, LocalDateTime orderDate, LocalDateTime returnDate) {
         this.orderId = orderId;
@@ -83,5 +84,13 @@ public class Order {
 
     public void setOrderStatus(OrderStatus orderStatus) {
         this.orderStatus = orderStatus;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
     }
 }

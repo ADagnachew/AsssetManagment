@@ -4,13 +4,13 @@ import java.util.List;
 
 public class StockKeeper extends Role{
 
-    private List<StockKeeper> stockKeepers;
+    private List<Order> orders;
 
-    public List<StockKeeper> getStockKeepers() {
-        return stockKeepers;
+    public List<Order> getOrders() {
+        return orders;
     }
 
-    public void setStockKeepers(List<StockKeeper> stockKeepers) {
-        this.stockKeepers = stockKeepers;
+    public void setOrders(List<Order> orders) {
+        this.orders = orders;
     }
 }
