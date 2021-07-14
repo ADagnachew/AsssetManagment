@@ -20,6 +20,7 @@ public class FunctionUtilTest {
 
     Product laptop, printer,chair,bike,car,TV,dish,fork,mobilePhone,book,bottle,cooler,whiteBoard,refrigrator,spoon;
     Order order1, order2, order3, order4,order5,order6, order7,order8,order9,order10;
+    Order order11, order12, order13, order14,order15,order16, order17,order18,order19,order20;
     OrderLine orderLine1,orderLine2,orderLine3,orderLine4,orderLine5;
     OrderLine orderLine6,orderLine7,orderLine8,orderLine9,orderLine10;
     OrderLine orderLine11,orderLine12,orderLine13,orderLine14,orderLine15;
@@ -149,6 +150,17 @@ public class FunctionUtilTest {
         order8 = new Order("Order108",orderDate4,returnDate4,Arrays.asList(orderLine1),OrderStatus.DELIVERED);
         order9 = new Order("Order109",orderDate2,returnDate2,Arrays.asList(orderLine3),OrderStatus.DELIVERED);
         order10 = new Order("Order110",orderDate6,returnDate6,Arrays.asList(orderLine1,orderLine2),OrderStatus.CANCELED);
+
+        order11 = new Order("order111" ,orderDate1,returnDate1,Arrays.asList(orderLine22),OrderStatus.APPROVED);
+        order12 = new Order("Order112",orderDate2,returnDate2,Arrays.asList(orderLine12),OrderStatus.DELIVERED);
+        order13 = new Order("Order113",orderDate3,returnDate3,Arrays.asList(orderLine23),OrderStatus.DELIVERED);
+        order14 = new Order("Order114",orderDate4,returnDate4,Arrays.asList(orderLine11),OrderStatus.DELIVERED);
+        order15 = new Order("Order115",orderDate5,returnDate5,Arrays.asList(orderLine9),OrderStatus.REJECTED);
+        order16 = new Order("Order116",orderDate6,returnDate6,Arrays.asList(orderLine6),OrderStatus.DELIVERED);
+        order17 = new Order("Order117",orderDate1,returnDate2,Arrays.asList(orderLine14),OrderStatus.REJECTED);
+        order18 = new Order("Order118",orderDate4,returnDate4,Arrays.asList(orderLine17),OrderStatus.DELIVERED);
+        order19 = new Order("Order119",orderDate2,returnDate2,Arrays.asList(orderLine27),OrderStatus.DELIVERED);
+        order20 = new Order("Order120",orderDate6,returnDate6,Arrays.asList(orderLine29,orderLine7),OrderStatus.CANCELED)
     }
 
 }
