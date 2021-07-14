@@ -7,6 +7,7 @@ public class Product {
     private double price;
 
     Category category;
+    private Stock stock;
 
     public Product(String id, String productName, double price) {
         this.id = id;
@@ -44,5 +45,13 @@ public class Product {
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    public Stock getStock() {
+        return stock;
+    }
+
+    public void setStock(Stock stock) {
+        this.stock = stock;
     }
 }

@@ -1,5 +1,14 @@
 package assetManagement;
 
-public abstract class Role extends Person{
+public abstract class Role {
 
+    private Person person;
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
+    }
 }
