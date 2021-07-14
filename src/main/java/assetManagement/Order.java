@@ -1,25 +1,26 @@
 package assetManagement;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public class Order {
 
     private String orderId;
-    private float amount;
     private LocalDateTime orderDate;
     private LocalDateTime returnDate;
-
+    private List<OrderLine> orderLines;
     private Manager manager;
     private StockKeeper stockKeeper;
     private User user;
     private OrderStatus orderStatus;
     private Product product;
 
-    public Order(String orderId, float amount, LocalDateTime orderDate, LocalDateTime returnDate) {
+    public Order(String orderId, LocalDateTime orderDate, LocalDateTime returnDate, List<OrderLine> ordersLines) {
         this.orderId = orderId;
-        this.amount = amount;
         this.orderDate = orderDate;
         this.returnDate = returnDate;
+        this.orderLines=ordersLines;
+
     }
 
     public String getOrderId() {
