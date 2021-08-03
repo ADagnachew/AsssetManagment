@@ -13,7 +13,6 @@ public class Order {
     private StockKeeper stockKeeper;
     private User user;
     private OrderStatus orderStatus;
-    private Product product;
 
     public Order(String orderId, LocalDateTime orderDate, LocalDateTime returnDate, List<OrderLine> ordersLines, OrderStatus orderStatus) {
         this.orderId = orderId;
@@ -31,13 +30,7 @@ public class Order {
         this.orderId = orderId;
     }
 
-    public float getAmount() {
-        return amount;
-    }
 
-    public void setAmount(float amount) {
-        this.amount = amount;
-    }
 
     public LocalDateTime getOrderDate() {
         return orderDate;
@@ -87,11 +80,24 @@ public class Order {
         this.orderStatus = orderStatus;
     }
 
-    public Product getProduct() {
-        return product;
+
+
+    public List<OrderLine> getOrderLines() {
+        return orderLines;
     }
 
-    public void setProduct(Product product) {
-        this.product = product;
+    public void setOrderLines(List<OrderLine> orderLines) {
+        this.orderLines = orderLines;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "orderId='" + orderId + '\'' +
+                ", orderDate=" + orderDate +
+                ", returnDate=" + returnDate +
+                ", orderLines=" + orderLines +
+                ", orderStatus=" + orderStatus +
+                '}';
     }
 }

@@ -46,4 +46,12 @@ public class Department {
     public void setUniversity(University university) {
         this.university = university;
     }
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "depId='" + depId + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
