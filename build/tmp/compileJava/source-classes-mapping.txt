@@ -1,0 +1,40 @@
+assetManagement/Main.java
+ assetManagement.Main
+assetManagement/QuadFunction.java
+ assetManagement.QuadFunction
+assetManagement/OrderStatus.java
+ assetManagement.OrderStatus
+assetManagement/Manager.java
+ assetManagement.Manager
+assetManagement/Role.java
+ assetManagement.Role
+assetManagement/User.java
+ assetManagement.User
+assetManagement/OrderLine.java
+ assetManagement.OrderLine
+assetManagement/StockKeeper.java
+ assetManagement.StockKeeper
+assetManagement/DataLoad.java
+ assetManagement.DataLoad
+assetManagement/University.java
+ assetManagement.University
+assetManagement/Tuple.java
+ assetManagement.Tuple
+assetManagement/TriFunction.java
+ assetManagement.TriFunction
+assetManagement/FunctionUtil.java
+ assetManagement.FunctionUtil
+assetManagement/Department.java
+ assetManagement.Department
+assetManagement/Person.java
+ assetManagement.Person
+assetManagement/Stock.java
+ assetManagement.Stock
+assetManagement/FiveFunction.java
+ assetManagement.FiveFunction
+assetManagement/Order.java
+ assetManagement.Order
+assetManagement/Product.java
+ assetManagement.Product
+assetManagement/Category.java
+ assetManagement.Category
